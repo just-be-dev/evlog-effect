@@ -10,7 +10,7 @@ Verified against `effect@4.0.0-beta.78` and `evlog@2.19.0`.
 
 ```ts
 import { Effect } from "effect"
-import { Evlog, EvlogBridge, EvlogInit, WideEvent } from "evlog-effect"
+import { Evlog, EvlogBridge, EvlogInit, WideEvent } from "@just-be/evlog-effect"
 import type { DrainContext } from "evlog"
 import { createAxiomDrain } from "evlog/axiom"
 import { createDrainPipeline } from "evlog/pipeline"
@@ -93,7 +93,7 @@ Other v4 surface differences used here: `Context.Service<Self, Shape>()("id")` r
 ```ts
 import { Effect } from "effect"
 import { HttpMiddleware, HttpServerRequest } from "effect/unstable/http"
-import { Evlog } from "evlog-effect"
+import { Evlog } from "@just-be/evlog-effect"
 
 export const evlogMiddleware = HttpMiddleware.make((app) =>
   Effect.gen(function* () {
@@ -115,8 +115,8 @@ export const evlogMiddleware = HttpMiddleware.make((app) =>
 ## Tests
 
 ```sh
-bun run check   # tsc --noEmit
-bun run test    # runtime smoke test against the in-memory drain
+bun run check   # typecheck + runtime smoke tests
+bun run build   # emit dist/ for publishing
 ```
 
 The smoke test exercises: success accumulation, typed-error failure capture, the `Effect.log*` bridge (including level promotion and annotations), the layer form, and drain flushing.

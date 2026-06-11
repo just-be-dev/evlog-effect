@@ -4,7 +4,7 @@ import * as Effect from "effect/Effect"
 import * as Exit from "effect/Exit"
 import * as Logger from "effect/Logger"
 import type { AuditableLogger, FieldContext, LogLevel, WideEvent as WideEventData } from "evlog"
-import { Evlog, EvlogBridge, EvlogInit, WideEvent } from "./index.ts"
+import { Evlog, EvlogBridge, EvlogInit, WideEvent } from "./index.js"
 
 type Call = {
   readonly method: string

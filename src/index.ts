@@ -2,10 +2,10 @@
  * evlog-effect — Effect v4 bindings for evlog wide events.
  *
  * ```ts
- * import { Evlog, EvlogBridge, EvlogInit } from "evlog-effect"
+ * import { Evlog, EvlogBridge, EvlogInit } from "@just-be/evlog-effect"
  * ```
  */
-export * as Evlog from "./WideEvent.ts"
-export { WideEvent } from "./WideEvent.ts"
-export * as EvlogBridge from "./Bridge.ts"
-export * as EvlogInit from "./Init.ts"
+export * as Evlog from "./WideEvent.js"
+export { WideEvent } from "./WideEvent.js"
+export * as EvlogBridge from "./Bridge.js"
+export * as EvlogInit from "./Init.js"

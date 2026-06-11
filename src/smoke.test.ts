@@ -4,7 +4,7 @@ import { Effect, Exit } from "effect"
 import { createMemoryDrain, readMemoryLogs } from "evlog/memory"
 import { createDrainPipeline } from "evlog/pipeline"
 import type { DrainContext } from "evlog"
-import { Evlog, EvlogBridge, EvlogInit, WideEvent } from "./index.ts"
+import { Evlog, EvlogBridge, EvlogInit, WideEvent } from "./index.js"
 
 // --- setup: evlog initialized via the Init layer, events captured in memory ---
 const pipeline = createDrainPipeline<DrainContext>({ batch: { size: 1, intervalMs: 10 } })

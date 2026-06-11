@@ -10,7 +10,7 @@
 import { Context, Option } from "effect"
 import * as Logger from "effect/Logger"
 import * as References from "effect/References"
-import { WideEvent } from "./WideEvent.ts"
+import { WideEvent } from "./WideEvent.js"
 
 const toMessage = (message: unknown): string => {
   if (typeof message === "string") return message
