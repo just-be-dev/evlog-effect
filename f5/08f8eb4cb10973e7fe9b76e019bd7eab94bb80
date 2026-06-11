@@ -1,0 +1,28 @@
+README.md
+  s_45b87df1f0d7a6::t_f1eda36b58d586 13,96
+  s_45b87df1f0d7a6::t_bbaf597eed8ccb 118-119
+src/Bridge.ts
+  s_45b87df1f0d7a6::t_f1eda36b58d586 13
+src/smoke.test.ts
+  s_45b87df1f0d7a6::t_d11127eb2807c0 7
+src/WideEvent.test.ts
+  s_45b87df1f0d7a6::t_d11127eb2807c0 7
+src/index.ts
+  s_45b87df1f0d7a6::t_f1eda36b58d586 5,8-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "f508f8eb4cb10973e7fe9b76e019bd7eab94bb80",
+  "prompts": {},
+  "sessions": {
+    "s_45b87df1f0d7a6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_14b66af22ffeJutDCx8dis6zzC",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Justin Bennett <git@just-be.dev>"
+    }
+  }
+}
