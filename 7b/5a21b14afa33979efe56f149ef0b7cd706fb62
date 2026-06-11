@@ -1,0 +1,54 @@
+mise.toml
+  s_01b626fd26f861::t_89f3cf70dedc96 1-2
+  s_01b626fd26f861::t_7ee7cf1e524d1e 3-20
+tsconfig.json
+  s_85db3dbff7f9b9::t_8ac51c7ce1505c 18-19
+  s_98e091d211afea::t_3712a9a2ba011a 2-10,20-22
+  s_c3cddc9258d843::t_a5c8b312d7890d 26-28
+CLAUDE.md
+  s_98e091d211afea::t_209e8862b8a7a7 107-132
+package.json
+  s_98e091d211afea::t_6a3d850a6aa989 23-24
+  s_98e091d211afea::t_5506df1617a4b6 27-29
+  s_98e091d211afea::t_5f3b4eb12bc86d 12-17,21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "7b5a21b14afa33979efe56f149ef0b7cd706fb62",
+  "prompts": {},
+  "sessions": {
+    "s_01b626fd26f861": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "72675ed3-a86c-4786-8d38-39c8a0f8ef61",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Justin Bennett <git@just-be.dev>"
+    },
+    "s_85db3dbff7f9b9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_14b71d200ffeb1GKoDT9XyqZLv",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Justin Bennett <git@just-be.dev>"
+    },
+    "s_98e091d211afea": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "dc831fb0-016c-4a62-97d0-270e9d4bd0fc",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Justin Bennett <git@just-be.dev>"
+    },
+    "s_c3cddc9258d843": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_14b7bd7e1ffee2SlD7BKvnqFht",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Justin Bennett <git@just-be.dev>"
+    }
+  }
+}
