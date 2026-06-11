@@ -1,0 +1,19 @@
+.zed/settings.json
+  s_98e091d211afea::t_919f202051e280 1-15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "e15a0787f52ade00dba714f5b9f58562cfebd7f5",
+  "prompts": {},
+  "sessions": {
+    "s_98e091d211afea": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "dc831fb0-016c-4a62-97d0-270e9d4bd0fc",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Justin Bennett <git@just-be.dev>"
+    }
+  }
+}
