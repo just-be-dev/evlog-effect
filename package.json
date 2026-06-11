@@ -38,7 +38,7 @@
     "check": "bun run typecheck && bun run test",
     "prepack": "bun run build",
     "typecheck": "tsgo --noEmit",
-    "prepare": "effect-tsgo patch",
+    "prepare": "bun run effect-tsgo patch",
     "test": "bun test src"
   },
   "devDependencies": {
