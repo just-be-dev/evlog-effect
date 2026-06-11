@@ -1,0 +1,20 @@
+.github/workflows/publish-pr.yml
+  s_45b87df1f0d7a6::t_34008a02ade1fb 34,37,52,64-65
+  s_45b87df1f0d7a6::t_f1eda36b58d586 1-33,35,39-51,53-63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "9ba3c5086e3ca101afbffc2a90e57030148b6600",
+  "prompts": {},
+  "sessions": {
+    "s_45b87df1f0d7a6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_14b66af22ffeJutDCx8dis6zzC",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Justin Bennett <git@just-be.dev>"
+    }
+  }
+}
