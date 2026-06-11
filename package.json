@@ -3,9 +3,30 @@
   "version": "0.1.0",
   "description": "Effect v4 bindings for evlog wide events",
   "type": "module",
-  "main": "./src/index.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./src/index.ts"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/just-be-dev/evlog-effect.git"
+  },
+  "bugs": {
+    "url": "https://github.com/just-be-dev/evlog-effect/issues"
+  },
+  "homepage": "https://github.com/just-be-dev/evlog-effect#readme",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "peerDependencies": {
     "effect": "^4.0.0-beta.78",
@@ -13,6 +34,9 @@
     "typescript": "^6.0.3"
   },
   "scripts": {
+    "build": "rm -rf dist && tsgo && rm -f dist/*.test.*",
+    "check": "bun run typecheck && bun run test",
+    "prepack": "bun run build",
     "typecheck": "tsgo --noEmit",
     "prepare": "effect-tsgo patch",
     "test": "bun test src"
@@ -26,6 +50,5 @@
   },
   "trustedDependencies": [
     "@typescript/native-preview"
-  ],
-  "private": true
+  ]
 }
