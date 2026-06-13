@@ -78,16 +78,6 @@ When the unit of work fails, `finalize` walks the (v4 flat) `Cause`:
 
 evlog seals the logger after emit, so a leaked fiber calling `set` after the event shipped produces an `[evlog]` console warning rather than silent data loss.
 
-## Why the design changed from a v3 sketch
-
-Two Effect v4 changes shaped this binding:
-
-1. **Layers are memoized across `Effect.provide` calls.** In v3, providing a module-level `Layer.scoped(RequestLogger, ...)` per request built a fresh logger each time. In v4 the shared `MemoMap` would silently reuse **one** wide event across every request. That's why `withWideEvent` is the primary API (plain `onExit`, no layer), and the layer forms are wrapped in `Layer.fresh`.
-
-2. **Loggers receive the emitting fiber, and `fiber.context` is readable synchronously.** The v3 bridge needed an `Effect.runSync` hack to reach the request logger from inside a `Logger`. In v4 the bridge is just `Context.getOption(options.fiber.context, WideEvent)` — fully synchronous, no runtime re-entry, and it naturally resolves to whichever wide event the *current fiber* is inside, even across forks.
-
-Other v4 surface differences used here: `Context.Service<Self, Shape>()("id")` replaces `Context.Tag`, `Layer.effect` runs its effect in the layer scope (no separate `Layer.scoped`), `LogLevel` is a string union, and `Cause` is a flat array of `Fail | Die | Interrupt` reasons.
-
 ## HTTP middleware sketch (`effect/unstable/http`)
 
 ```ts
