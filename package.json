@@ -1,6 +1,6 @@
 {
   "name": "@just-be/evlog-effect",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Effect v4 bindings for evlog wide events",
   "type": "module",
   "main": "./dist/index.js",
@@ -30,8 +30,7 @@
   },
   "peerDependencies": {
     "effect": "^4.0.0-beta.78",
-    "evlog": "^2.19.0",
-    "typescript": "^6.0.3"
+    "evlog": "^2.19.0"
   },
   "scripts": {
     "build": "rm -rf dist && tsgo && rm -f dist/*.test.*",
