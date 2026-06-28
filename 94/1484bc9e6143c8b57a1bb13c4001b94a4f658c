@@ -1,0 +1,21 @@
+package.json
+  s_a367d5ce597c4a::t_ec95f8a8a73c28 3,33
+CHANGELOG.md
+  s_a367d5ce597c4a::t_ec95f8a8a73c28 1-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "941484bc9e6143c8b57a1bb13c4001b94a4f658c",
+  "prompts": {},
+  "sessions": {
+    "s_a367d5ce597c4a": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f1058-3ed9-7e02-9c2b-bbd70dfd42a9",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Justin Bennett <git@just-be.dev>"
+    }
+  }
+}
