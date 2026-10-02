@@ -1,6 +1,6 @@
 {
   "name": "@just-be/evlog-effect",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Effect v4 bindings for evlog wide events",
   "type": "module",
   "main": "./dist/index.js",
