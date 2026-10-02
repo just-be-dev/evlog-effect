@@ -4,7 +4,7 @@ Effect **v4** (effect-smol) bindings for [evlog](https://evlog.dev) wide events.
 
 One evlog logger per unit of work, exposed as an Effect service. Context accumulates via `set` as the work proceeds; the wide event is emitted exactly once when the work completes — success, failure, or interruption — with error context extracted from the Effect `Cause`.
 
-Verified against `effect@4.0.0-beta.78` and `evlog@2.19.0`.
+Verified against `effect@4.0.0` and `evlog@2.29.0`.
 
 ## Quick start
 
@@ -95,7 +95,7 @@ export const evlogMiddleware = HttpMiddleware.make((app) =>
 )
 ```
 
-(`unstable/http` may shift between betas — the combinator only needs to wrap the per-request effect, so it adapts to whatever the middleware signature looks like.)
+(`unstable/http` may change in future releases — the combinator only needs to wrap the per-request effect, so it adapts to whatever the middleware signature looks like.)
 
 ## Not covered (yet)
 
