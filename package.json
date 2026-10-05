@@ -1,6 +1,6 @@
 {
   "name": "@just-be/evlog-effect",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Effect v4 bindings for evlog wide events",
   "type": "module",
   "main": "./dist/index.js",
@@ -29,25 +29,21 @@
     "registry": "https://registry.npmjs.org/"
   },
   "peerDependencies": {
-    "effect": "^4.0.0-beta.78",
+    "effect": "^4.0.0",
     "evlog": "^2.19.0"
   },
   "scripts": {
-    "build": "rm -rf dist && tsgo && rm -f dist/*.test.*",
+    "build": "rm -rf dist && tsc && rm -f dist/*.test.*",
     "check": "bun run typecheck && bun run test",
     "prepack": "bun run build",
-    "typecheck": "tsgo --noEmit",
+    "typecheck": "tsc --noEmit",
     "prepare": "bun run effect-tsgo patch",
     "test": "bun test src"
   },
   "devDependencies": {
-    "@effect/tsgo": "^0.5.2",
+    "@effect/tsgo": "^0.47.2",
     "@types/bun": "latest",
     "@types/node": "^25.9.3",
-    "@typescript/native-preview": "^7.0.0-dev.20260509.2",
-    "typescript": "^6.0.3"
-  },
-  "trustedDependencies": [
-    "@typescript/native-preview"
-  ]
+    "typescript": "^7.0.2"
+  }
 }
