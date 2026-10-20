@@ -1,5 +1,18 @@
 # evlog-effect
 
+> [!IMPORTANT]
+> **This package is deprecated and the repository is archived.** evlog now ships official Effect 4 support as [`evlog/effect`](https://www.evlog.dev/integrate/frameworks/effect), starting with `evlog@2.33.0`. Use that instead:
+>
+> ```sh
+> bun add evlog effect
+> ```
+>
+> ```ts
+> import { EvlogLogger, routerLayer, withLogger } from "evlog/effect"
+> ```
+>
+> See the [Effect integration docs](https://www.evlog.dev/integrate/frameworks/effect) and [evloghq/evlog#855](https://github.com/evloghq/evlog/pull/855). `@just-be/evlog-effect` will get no further updates. The original documentation is kept below for reference.
+
 Effect **v4** (effect-smol) bindings for [evlog](https://evlog.dev) wide events.
 
 One evlog logger per unit of work, exposed as an Effect service. Context accumulates via `set` as the work proceeds; the wide event is emitted exactly once when the work completes — success, failure, or interruption — with error context extracted from the Effect `Cause`.
