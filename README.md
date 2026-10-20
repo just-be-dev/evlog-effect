@@ -110,3 +110,7 @@ bun run build   # emit dist/ for publishing
 ```
 
 The smoke test exercises: success accumulation, typed-error failure capture, the `Effect.log*` bridge (including level promotion and annotations), the layer form, and drain flushing.
+
+## License
+
+[MIT](./LICENSE)

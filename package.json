@@ -2,6 +2,7 @@
   "name": "@just-be/evlog-effect",
   "version": "0.1.2",
   "description": "Effect v4 bindings for evlog wide events",
+  "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
